@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UNBLOCKEd Tower Defense</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<canvas id="g"></canvas>
+<div id="hud">
+  <div id="topbar">
+    <div class="stat">💰 <span id="money">0</span></div>
+    <div class="stat">❤ <span id="lives">0</span></div>
+    <div class="stat">Wave <span id="wave">0</span>/<span id="waveTotal">0</span></div>
+  </div>
+  <div id="panel" class="card hidden"></div>
+  <div class="btn hidden" id="waveBtn">Start Wave</div>
+  <div class="btn hidden" id="speedBtn">1x</div>
+  <div id="shop"></div>
+</div>
+<div id="banner"></div>
+
+<div class="overlay" id="startOverlay">
+  <div class="card">
+    <h1>Bastion Line</h1>
+    <p>Place towers to stop waves of raiders before they reach your gate. Pick a front to defend.</p>
+    <div class="lvlGrid" id="lvlGrid"></div>
+  </div>
+</div>
+
+<div class="overlay hidden" id="endOverlay">
+  <div class="card">
+    <h1 id="endTitle">-</h1>
+    <p id="endDesc"></p>
+    <div class="btn" id="retryBtn">Retry</div>
+    <div class="btn" id="menuBtn">Level Select</div>
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
